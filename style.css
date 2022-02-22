@@ -1,0 +1,225 @@
+:root {
+    --text-main: #143a67;
+    --text-white: #fff;
+    --bg-white: #f2f2f2;
+    --bg-blue: #4ae3bf;
+    --blue-300: #4ae3bf;
+    --blue-800: #02234c;
+    --yellow-800: #f1bc00;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,
+html {
+    background-color: var(--bg-white);
+    scroll-behavior: smooth;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+}
+a {
+    text-decoration: none;
+    color: unset;
+}
+li {
+    list-style: none;
+}
+.btn {
+    height: 51px;
+    width: 202px;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 6px 8px 8px 0px #00000040;
+    background-color: var(--yellow-800);
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: 800;
+}
+.btn:hover {
+    background-color: var(--bg-blue);
+}
+.btn p {
+    color: var(--text-main);
+}
+.btn p span {
+    color: var(--blue-800);
+}
+.container {
+    max-width: 1330px;
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+}
+.wrapper {
+    width: 100%;
+    height: auto;
+}
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+}
+header .logo {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 72px;
+    color: var(--blue-800);
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul > * {
+    margin-right: 69px;
+}
+nav ul > *:last-child {
+    margin-right: 0;
+}
+nav ul > * a {
+    color: var(--text-main);
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+nav ul > * a:hover {
+    color: var(--blue-800);
+}
+nav ul > * a:nth-child(3) {
+    color: var(--text-white) !important;
+}
+nav ul li:nth-child(3) {
+    background-color: var(--bg-blue);
+    border-radius: 25px;
+    padding: 10px 15px;
+}
+
+/* Banner */
+
+#banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 3rem 0;
+    height: 572px;
+    width: 100%;
+}
+#banner .stars {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 50%;
+}
+#banner .middle {
+    max-width: 500px;
+}
+#banner .middle .middle__hand {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#banner .middle .middle__hand .hand {
+    z-index: 1;
+    position: relative;
+    transform: translateY(-100px);
+}
+#banner .middle .middle__hand .highlight-1,
+#banner .middle .middle__hand .highlight-2,
+#banner .middle .middle__hand .highlight-3,
+#banner .middle .middle__hand .highlight-4,
+#banner .middle .middle__hand .highlight-5 {
+    position: absolute;
+}
+#banner .middle .middle__hand .highlight-5 {
+    top: 50%;
+    left: 50px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--blue-300);
+}
+#banner .middle .middle__hand .highlight-1 {
+    top: 0;
+    left: 50px;
+}
+#banner .middle .middle__hand .highlight-4 {
+    top: 0;
+    right: 50px;
+}
+#banner .middle .middle__hand .highlight-3 {
+    top: 50%;
+    right: 50px;
+}
+#banner .middle .middle__hand .highlight-2 {
+    bottom: 100px;
+    left: calc(50% - 50px);
+}
+
+#banner .middle .middle__btn {
+    margin-top: 2rem;
+    border-radius: 25px;
+    border: 3px solid var(--blue-800);
+    height: 45.030670166015625px;
+    width: 542px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-main);
+    cursor: pointer;
+}
+#banner .middle .middle__btn:hover {
+    background-color: var(--bg-blue);
+    color: var(--text-white);
+}
+#banner img {
+    align-self: center;
+}
+
+#WOLI {
+    width: 100%;
+    height: 500px;
+}
+#WOLI .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.woli-left {
+    width: 50%;
+    height: 100%;
+}
+.woli-left .woli-left__title {
+    padding: 1rem 2rem 1rem 0;
+}
+.woli-left .woli-left__title > * {
+    margin-bottom: 1rem;
+}
+.woli-left .woli-left__title h2 {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 30px;
+    color: var(--text-main);
+}
+.woli-left .woli-left__title p {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--text-main);
+}
+.woli-right {
+    width: 60%;
+    height: 100%;
+}
