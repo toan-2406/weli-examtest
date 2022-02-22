@@ -110,8 +110,8 @@ nav ul li:nth-child(3) {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 3rem 0;
-    height: 572px;
+    padding-top: 6rem;
+    height: 100vh;
     width: 100%;
 }
 #banner .stars {
@@ -120,6 +120,11 @@ nav ul li:nth-child(3) {
     align-items: center;
     flex-direction: column;
     height: 50%;
+}
+#banner .stars > * {
+    min-height: 75px;
+    min-width: 70px;
+    margin-bottom: 2rem;
 }
 #banner .middle {
     max-width: 500px;
@@ -133,7 +138,7 @@ nav ul li:nth-child(3) {
 #banner .middle .middle__hand .hand {
     z-index: 1;
     position: relative;
-    transform: translateY(-100px);
+
 }
 #banner .middle .middle__hand .highlight-1,
 #banner .middle .middle__hand .highlight-2,
@@ -143,25 +148,12 @@ nav ul li:nth-child(3) {
     position: absolute;
 }
 #banner .middle .middle__hand .highlight-5 {
-    top: 50%;
-    left: 50px;
     width: 10px;
     height: 10px;
     border-radius: 50%;
     background-color: var(--blue-300);
 }
-#banner .middle .middle__hand .highlight-1 {
-    top: 0;
-    left: 50px;
-}
-#banner .middle .middle__hand .highlight-4 {
-    top: 0;
-    right: 50px;
-}
-#banner .middle .middle__hand .highlight-3 {
-    top: 50%;
-    right: 50px;
-}
+
 #banner .middle .middle__hand .highlight-2 {
     bottom: 100px;
     left: calc(50% - 50px);
@@ -190,6 +182,7 @@ nav ul li:nth-child(3) {
 #WOLI {
     width: 100%;
     height: 500px;
+    
 }
 #WOLI .container {
     display: flex;
@@ -222,4 +215,164 @@ nav ul li:nth-child(3) {
 .woli-right {
     width: 60%;
     height: 100%;
+}
+/* Feature */
+#features {
+    width: 100%;
+    height: 750px;
+    background-color: var(--bg-blue);
+    padding: 4rem 0;
+}
+#features .container h2 {
+   font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 30px;
+    color: var(--text-main);
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.feature {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+}
+.feature__left {
+    width: 40%;
+    height: 100%;
+     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4rem 2rem 4rem 0;
+}
+.feature__mid{
+    width: 20%;
+    height: 100%;
+}
+.feature__right {
+    width: 40%;
+    height: 100%;
+    text-align: right;
+    padding: 4rem 0 4rem 2rem;
+}
+.feature__grid > * {
+    margin-bottom: 78px;
+}
+
+
+.feature__text{
+    height:50%;
+}
+.feature__text h3{
+    color: var(--text-white);
+    font-style: normal;
+font-weight: 600;
+font-size: 28px;
+line-height: 30px;
+margin-bottom: 1rem;
+}
+.feature__text p{
+    font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 30px;
+    color: var(--text-main);
+}
+
+/* Animation */
+
+.fly-into{
+    transform: translateY(-300px);
+    opacity: 0.5;
+    transition: all ease-in-out 0.5s ;
+}
+.fly-into.start{
+    transform: translateY(-100px);
+    opacity: 1;
+}
+.fly-left-top{
+    top:-150px;
+    left:-200px;
+    opacity: 0;
+    transition: all ease-in 0.5s ;
+}
+.fly-left-top.start{
+    opacity: 1;
+     top: 0;
+    left: 50px;
+}
+.fly-left-bottom{
+    bottom:-150px;
+    left:-200px;
+    opacity: 0;
+    transition: all ease-in 0.5s ;
+}
+.fly-left-bottom.start{
+    opacity: 1;
+     top: 50%;
+    left: 50px;
+}
+.fly-right-top{
+    top:-150px;
+    right:-200px;
+    opacity: 0;
+    transition: all ease-in 0.5s ;
+}
+.fly-right-top.start{
+    opacity: 1;
+     top: 0;
+    right: 50px;
+}
+.fly-right-bottom{
+    bottom:150px;
+    right:-200px;
+    opacity: 0;
+    transition: all ease-in 0.5s ;
+}
+.fly-right-bottom.start{
+    opacity: 1;
+     top: 50%;
+    right: 50px;
+}
+
+.left-to-right {
+  transform: translateX(-150%);
+  transition: 1s ease-in-out;
+}
+.left-to-right.start {
+  transform: translateX(0);
+}
+.right-to-left {
+  transform: translateX(150%);
+  transition: 1s ease-in-out;
+}
+.right-to-left.start {
+  transform: translateX(0);
+}
+
+.zoom-in {
+    transform: scale(0.5);
+    transition: 0.5s ease-in-out;
+}
+.zoom-in.start {
+    transform: scale(1);
+}
+
+.delay-2 {
+  transition-delay: 0.2s;
+}
+.delay-3 {
+  transition-delay: 0.3s;
+}
+.delay-4 {
+  transition-delay: 0.4s;
+}
+.delay-5 {
+  transition-delay: 0.5s;
+}
+.delay-6 {
+  transition-delay: 0.6s;
 }
