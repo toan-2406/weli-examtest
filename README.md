@@ -7,3 +7,9 @@
 ![Screenshot 2022-02-23 113144](https://user-images.githubusercontent.com/57821796/155262080-88ddc606-28c9-4fb7-849f-f4b32d325523.png)(hình 1)
 ![image](https://user-images.githubusercontent.com/57821796/155263036-c3922994-ed3f-409e-b219-30f1477782f6.png)(hình 2)
 
+#Về tổng quan
++ Nên thêm nút back to top và một số nút phone, mail, chat được fixed để user tiện liên lạc với mình
++ Bố cục layout: Như trong hình 3 nên bỏ section này ở nơi nằm giữa hoặc gần cuối trang vì ta cần show những dịch vụ của brand trước hết
+![image](https://user-images.githubusercontent.com/57821796/155266383-e2dd3d92-3b19-4053-a8c9-21efffff2a0d.png)(hình 3)
++ Màu sắc: chỉ được 5/10 vì những mục quan trong như dịch vụ, sản phẩm, thống kê,.. không được làm nổi bật lên.
+ 
